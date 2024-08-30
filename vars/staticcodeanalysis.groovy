@@ -1,3 +1,4 @@
 def call(){
-    sh 'mvn clean package sonar:sonar'
+    sh 'clean package sonar:sonar -DargLine="--add-opens java.base/java.lang=ALL-UNNAMED
+'
 }
